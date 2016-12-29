@@ -1,0 +1,160 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: black;
+		line-height: 1.5;
+	}
+	
+	.container h1 {
+		text-transform: uppercase;
+		letter-spacing: -0.0625em; /* 4px */
+		font-size: 5em;
+		font-weight: bold;
+		line-height: 1;
+		color: #008ce3;
+		margin: 12% 0 0 0;
+	}
+	
+	.container h2 {
+		font-size: 3.6em;
+		font-weight: bold;
+		line-height: 1;
+		margin: 2.1% 0 0 0;
+	}
+	
+	.container h3 {
+		font-size: 2.2em;
+		font-weight: 400;
+		margin: 3.1% 0 0 0;
+	}
+	
+	.container p {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		margin: 3.1% 0 0 0;
+	}
+	
+	#footer {
+		padding-top: 10pt;
+		padding-bottom: 42pt;
+
+		border-top: 1px solid black;
+		width: 100%;
+		bottom: 0px;
+	
+		margin-top: 5em;
+		font-size: .75em;
+	}
+	
+	a, a:visited {
+		font-weight: bold;
+		font-style: oblique;
+		color: black;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: #008ce3;
+		text-decoration: underline;
+	}
+	
+	a:active {
+		color: red;
+		text-decoration: underline;
+	}
+	
+	/* SOCIAL NAV */
+	
+	#contact {
+		margin: 10px 0;
+		height: 32px;
+		overflow: hidden;
+		width: 100%;
+	}
+	
+	#contact li {
+		float: left;
+		width: 25%;
+	}
+	
+	#contact li.linkedin { width: 32px; margin-right: 10px; }
+	#contact li.tumblr { width: 32px; margin-right: 10px; }
+	#contact li.twitter { width: 32px; margin-right: 10px; }
+	#contact li.email { width: 32px; margin-right: 10px; }
+		
+	#contact li a {
+		background: url(../i/contactNav.png) top left no-repeat;
+		display: block;
+		font-size: 1em;
+		height: 50px;
+		line-height: 50px;
+		text-decoration: none;
+		text-indent: -10000px;
+		text-transform: uppercase;
+		width: 100%;
+	}
+	
+	#contact li.linkedin a { background-position: 0px 0px; }
+	#contact li.tumblr a { background-position: -40px 0px; }
+	#contact li.twitter a { background-position: -80px 0px; }
+	#contact li.email a { background-position: -120px 0px; }
+
+	#contact li.linkedin a:hover,
+	#contact li.linkedin a:focus { background-position: 0 -40px; }
+	#contact li.tumblr a:hover,
+	#contact li.tumblr a:focus { background-position: -40px -40px; }
+	#contact li.twitter a:hover,
+	#contact li.twitter a:focus { background-position: -80px -40px; }
+	#contact li.email a:hover,
+	#contact li.email a:focus { background-position: -120px -40px; }
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	.container h1 {
+		font-size:xx-large;
+		line-height: 1;
+		margin-bottom: 1%;
+	}
+	
+	.container h2 {
+		font-size:x-large;
+		line-height: 1;
+		margin-bottom: 1%;
+	}
+
+	.container h3 {
+		font-size:large;
+		font-weight: bold;
+		line-height: 1.25;
+		margin-bottom: 1%;
+	}
+
+
+	.container p {
+		font-size:large;
+		margin-bottom: 5%;
+	}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
