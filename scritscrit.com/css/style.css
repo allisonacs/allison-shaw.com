@@ -1,0 +1,77 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #4c5363;
+	background: url(../i/bg_moleskine.jpg);
+	line-height: 1.6em;
+	}
+	
+.container1 {
+	background: url(../i/header.jpg) repeat-x;
+}
+
+.header {
+	height: 493px;
+	background: url(../i/headerImg.png) no-repeat center;
+}
+
+.intro {
+	margin: 75px 0 60px 0;
+	height: 112px;
+	background: url(../i/introHeader.png) no-repeat center;
+}
+
+.header h1, .header h2, .intro h1, .intro h2 {
+	text-indent: -10000px;
+}
+
+.video {
+	width: 950px;
+	height: 540px;
+	background: url(../i/videoBG.png) no-repeat;
+	background-position: top center;
+	padding-top: 4px;
+	margin: 0 auto 60px auto;
+	text-align: center;
+}
+
+.copy {
+	width: 940px;
+	margin: 0 auto 60px auto;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+.copy #first {
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+	font-weight: bold;
+	color: #4c5363;
+	text-decoration: none;
+}
+
+	#footer {
+	width: 940px;
+	margin: 0 auto 60px auto;
+	text-align: left;
+
+		padding-top: 10pt;
+		padding-bottom: 42pt;
+
+		border-top: 1px solid #4c5363;
+		bottom: 0px;
+	
+		margin-top: 5em;
+		font-size: .75em;
+	}
