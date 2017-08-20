@@ -59,6 +59,7 @@ a:focus {
 }
 
 .section.red {
+  border-bottom: 1px none #c41200;
   background-image: -webkit-linear-gradient(270deg, #c41200, #c41200);
   background-image: linear-gradient(180deg, #c41200, #c41200);
 }
@@ -148,27 +149,63 @@ a:focus {
   color: hsla(0, 0%, 100%, .55);
 }
 
+.nowrap {
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .column-3 {
+    right: 10px;
+  }
+  .column-4 {
+    left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .column-2.lightbox {
+    margin-bottom: 12px;
+  }
+  .lightbox-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 479px) {
   .tt-portfolio-small {
     margin-bottom: 20px;
+  }
+  .heading-3 {
+    font-size: 36px;
   }
 }
 
 @font-face {
   font-family: 'Larsseit';
-  src: url('../fonts/33550C_2_0.woff2') format('undefined'), url('../fonts/33550C_2_0.eot') format('embedded-opentype'), url('../fonts/33550C_2_0.woff') format('woff'), url('../fonts/33550C_2_0.ttf') format('truetype');
+  src: url('../fonts/33550C_2_0.woff2') format('woff2'), url('../fonts/33550C_2_0.eot') format('embedded-opentype'), url('../fonts/33550C_2_0.woff') format('woff'), url('../fonts/33550C_2_0.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Larsseit-Light';
-  src: url('../fonts/33550C_0_0.woff2') format('undefined'), url('../fonts/33550C_0_0.eot') format('embedded-opentype'), url('../fonts/33550C_0_0.woff') format('woff'), url('../fonts/33550C_0_0.ttf') format('truetype');
+  src: url('../fonts/33550C_0_0.woff2') format('woff2'), url('../fonts/33550C_0_0.eot') format('embedded-opentype'), url('../fonts/33550C_0_0.woff') format('woff'), url('../fonts/33550C_0_0.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Larsseit-Bold';
-  src: url('../fonts/33550C_1_0.woff2') format('undefined'), url('../fonts/33550C_1_0.eot') format('embedded-opentype'), url('../fonts/33550C_1_0.woff') format('woff'), url('../fonts/33550C_1_0.ttf') format('truetype');
+  src: url('../fonts/33550C_1_0.woff2') format('woff2'), url('../fonts/33550C_1_0.eot') format('embedded-opentype'), url('../fonts/33550C_1_0.woff') format('woff'), url('../fonts/33550C_1_0.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
